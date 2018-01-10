@@ -1,7 +1,7 @@
 # ptwd-fb-chat
 
 ## Intro
-This app still has the credentials on in the index file that we used at the meetup. Feel free to use the DB or add your own credentials!
+This app still has the credentials in the index file that we used at the meetup. Feel free to use the DB or add your own credentials!
 
 ## Build the app
 First run `npm install` in the root. Then run `npm run build`. 
