@@ -1,0 +1,33 @@
+{
+  "name": "jswork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run build && node app.js",
+    "build": "npm run build-riot && npm run bundle",
+    "build-riot": "riot ./tags ./tags/tags.js --ext html",
+    "bundle": "browserify ./tags/tags.js -d -o ./public/bundle.js -t [ babelify --no-sourceMaps ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "express": "^4.15.4",
+    "nodemon": "^1.14.9",
+    "riot": "^3.6.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ]
+  }
+}
